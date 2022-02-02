@@ -1,8 +1,7 @@
-#!/bin/sh -ex
+#!/bin/sh -x
 
 # find /lib/modules/ -type f
 
 sudo apt install alsa-utils
-sudo modinfo soundcore
 sudo modprobe snd-dummy
 
