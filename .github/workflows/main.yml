@@ -9,7 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: ls -alF /lib/modules/5.11.0-1028-azure
-      - name: Install ALSA
-        run: sudo modprobe snd-dummy
+      - run: main.sh
 
